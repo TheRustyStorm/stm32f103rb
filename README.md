@@ -21,7 +21,7 @@ openocd -f interface/stlink-v2-1.cfg -f target/stm32f1x.cfg
 Other terminal:
 ```
 cargo run
-
+```
 This will open a gdb session to debug your project.
 
 # License
