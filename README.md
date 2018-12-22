@@ -2,7 +2,6 @@
 
 This projects was made with cortex-m-quickstart
 
-Inline-style: 
 ![stm32 with LED on](https://github.com/TheSovietStorm/stm32f103rb/blob/master/img.png "stm32 with LED on")
 
 # What is this?
