@@ -2,6 +2,9 @@
 
 This projects was made with cortex-m-quickstart
 
+Inline-style: 
+![stm32 with LED on](https://github.com/TheSovietStorm/stm32f103rb/blob/master/img.png "stm32 with LED on")
+
 # What is this?
 
 I want to try to create a library to control my stm32 board in a rusty way. Currently it is able to access gpio and change the state of the on board LED, so that should give you a clue on how far this project currently is.
