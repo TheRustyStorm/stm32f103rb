@@ -1,8 +1,12 @@
 # STM32F103RB
 
-This projects was made with cortex-m-quickstart
+This projects was made with [cortex-m-quickstart](https://github.com/rust-embedded/cortex-m-quickstart)
 
 ![stm32 with LED on](https://github.com/TheSovietStorm/stm32f103rb/blob/master/img.png "stm32 with LED on")
+
+Seriously, if you want to learn embedded rust use for example the cortex-m quickstart template and try to program everything yourself and look through the reference manuals to understand it.
+You will write few lines of code because finding what to write is the complex task.
+I struggled a lot with getting the LED to lighten up and i wanted to create a resource that people can come back to for a hopefully well documented guide.
 
 # What is this?
 
