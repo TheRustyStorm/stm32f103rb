@@ -26,6 +26,27 @@ cargo run
 ```
 This will open a gdb session to debug your project.
 
+# GPIO
+
+The first thing to do is making the on board LED blink.
+If you've worked with Arduino before, on avr it looks like this:
+```
+DDRB |= (1<<PB5);
+PORTB |= (1<<PB5);
+```
+The on Board LED on an Arduino Uno is connected to Pin PB5, which is the fifth gpio pin on Port B.
+In the first line we configure the data direction of PB5 to be output and in the next line we set the output of PB5 to high.
+
+On stm32 devices this is more complicated.
+The steps are as follows:
+
+
+1. Find to which Pin the on board LED is connected
+2. Turn on the associated port
+3. Configure the gpio as output
+4. Set the output to high
+5. Eventually set the output to low
+
 # License
 
 This template is licensed under either of
