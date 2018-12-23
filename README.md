@@ -78,6 +78,7 @@ ptr::write(0x4002_1018 as *mut u32, 1<<2);
 Now that GPIO Port A is enabled, let's look into configuring it.
 ![PORT](https://github.com/TheSovietStorm/stm32f103rb/blob/master/images/portadress.png)
 In the reference manual we find the address of GPIO Port A is 0x40010800 and to configure pins as input/output we need to modify the Port Configure Register Low GPIOX_CRL (if we have a pin above 7 we need GPIOX_CRH).
+![CRL](https://github.com/TheSovietStorm/stm32f103rb/blob/master/images/crl.png)
 The first thing we need to do is configure it as an output pin and for our purposes output speed of 2 MHz is sufficient.
 The MODEy sets the mode of Pin y, so if we want to modify the Mode of Pin 5, we need to Modify MODE5, which are bits 21 and 20.
 We write a 1 to bit 21 for an output mode speed of 2 MHz and the default option in the CNFy is what we want, General Purpose Push Pull and therefore we don't need to modify it.
@@ -89,6 +90,7 @@ Now our GPIO pin is configured and we may set it to high.
 
 ## Set the output to high
 
+![BSRR](https://github.com/TheSovietStorm/stm32f103rb/blob/master/images/bsrr.png)
 Looking through the reference manual we learn that the GPIOX_BSRR is used to set specific bits.
 We want to write a 1 into Pin 5 and the offset of BSRR is 0x10.
 ```
